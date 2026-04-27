@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cursos presenciales — Glam Hair Design</title>
+  <meta name="description" content="Cursos de peluquería presenciales en Glam Hair Design. Formamos a los próximos profesionales del cabello con técnicas de vanguardia." />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .cursos-hero {
+      position: relative;
+      padding-top: calc(var(--nav-h) + 6rem);
+      padding-bottom: 6rem;
+      overflow: hidden;
+    }
+    .cursos-hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('assets/cursos-hero.png');
+      background-size: cover;
+      background-position: center;
+    }
+    .cursos-hero-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(10,10,10,0.88) 0%, rgba(10,10,10,0.6) 100%);
+    }
+    .cursos-hero-content { position: relative; z-index: 1; max-width: 640px; }
+    .cursos-hero-content h1 { margin-bottom: 1rem; }
+    .cursos-hero-content p { color: #aaa; font-size: 1.05rem; }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container nav-container">
+    <a href="index.html" class="logo" aria-label="Glam Hair Design">
+      <span class="logo-script">Glam</span>
+      <span class="logo-sub">Hair Design</span>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links" role="list">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="quienes-somos.html">Quiénes somos</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="cursos.html">Cursos</a></li>
+      <li><a href="cursos-online.html">Cursos online</a></li>
+      <li><a href="turnos.html" class="btn btn-gold btn-sm">Reservar turno</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="cursos-hero">
+  <div class="cursos-hero-bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="cursos-hero-content">
+      <span class="section-tag">Formación profesional</span>
+      <h1>Formamos a los próximos<br><em>profesionales del cabello</em></h1>
+      <p>Cursos presenciales con práctica real en salón, dictados por profesionales con años de experiencia.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CURSOS CARDS -->
+<section class="section">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="section-tag">Niveles disponibles</span>
+      <h2 class="section-title">Elegí tu nivel</h2>
+      <p class="section-subtitle">Desde cero hasta la perfección. Tenemos un camino para cada etapa de tu formación.</p>
+    </div>
+    <div class="grid-3">
+
+      <div class="course-card reveal">
+        <span class="course-level">Nivel 1</span>
+        <p class="course-title">Fundamentos de peluquería</p>
+        <p class="course-desc">Introducción a las técnicas básicas: corte, lavado, secado y coloración fundamental. Ideal para quienes empiezan desde cero.</p>
+        <div class="course-meta">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
+          Modalidad presencial
+        </div>
+        <a href="https://wa.me/5491100000000?text=Hola%2C%20quiero%20info%20sobre%20los%20cursos%20presenciales%20(Nivel%201)" target="_blank" rel="noopener" class="btn btn-gold" id="consultar-nivel1">Consultar</a>
+      </div>
+
+      <div class="course-card reveal">
+        <span class="course-level">Nivel 2</span>
+        <p class="course-title">Técnicas avanzadas</p>
+        <p class="course-desc">Profundizá en balayage, mechas, alisados y tratamientos capilares de alta gama. Para quienes ya tienen base.</p>
+        <div class="course-meta">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
+          Modalidad presencial
+        </div>
+        <a href="https://wa.me/5491100000000?text=Hola%2C%20quiero%20info%20sobre%20los%20cursos%20presenciales%20(Nivel%202)" target="_blank" rel="noopener" class="btn btn-gold" id="consultar-nivel2">Consultar</a>
+      </div>
+
+      <div class="course-card reveal">
+        <span class="course-level">Perfeccionamiento</span>
+        <p class="course-title">Master en colorimetría</p>
+        <p class="course-desc">El nivel más alto de formación. Técnicas de colorimetría avanzada, tendencias internacionales y gestión de salón.</p>
+        <div class="course-meta">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
+          Modalidad presencial
+        </div>
+        <a href="https://wa.me/5491100000000?text=Hola%2C%20quiero%20info%20sobre%20los%20cursos%20presenciales%20(Perfeccionamiento)" target="_blank" rel="noopener" class="btn btn-gold" id="consultar-perfec">Consultar</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" style="background: var(--surface); border-top: 1px solid var(--border);">
+  <div class="container" style="max-width: 760px;">
+    <div class="section-header">
+      <span class="section-tag">Preguntas frecuentes</span>
+      <h2 class="section-title">Todo lo que necesitás saber</h2>
+    </div>
+    <div class="faq" id="faq">
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" id="faq-q1">
+          <h4>¿Es necesario tener experiencia previa para inscribirme?</h4>
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+          </svg>
+        </button>
+        <div class="faq-answer" role="region" aria-labelledby="faq-q1">
+          <p>Para el Nivel 1 no se requiere ningún tipo de experiencia previa. Es un curso diseñado para principiantes absolutos. Para Nivel 2 y Perfeccionamiento recomendamos haber completado el nivel anterior o tener conocimientos equivalentes.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" id="faq-q2">
+          <h4>¿Qué días y horarios se dictan los cursos?</h4>
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+          </svg>
+        </button>
+        <div class="faq-answer" role="region" aria-labelledby="faq-q2">
+          <p>Los cursos se dictan de lunes a sábados en distintos horarios para adaptarse a tu disponibilidad. Consultanos por WhatsApp para conocer la grilla actualizada de días y horarios disponibles en cada sede.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" id="faq-q3">
+          <h4>¿Los cursos tienen certificado oficial?</h4>
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+          </svg>
+        </button>
+        <div class="faq-answer" role="region" aria-labelledby="faq-q3">
+          <p>Sí. Al finalizar cada nivel exitosamente se entrega un certificado de Glam Hair Design que avala tu formación. También gestionamos las equivalencias con certificaciones de algunas marcas asociadas.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <div class="container">
+    <span class="section-tag">¿Querés inscribirte?</span>
+    <h2>Empezá tu carrera hoy</h2>
+    <p>Consultanos por WhatsApp y te asesoramos sin compromiso.</p>
+    <a href="https://wa.me/5491100000000?text=Hola%2C%20quiero%20info%20sobre%20los%20cursos%20presenciales" target="_blank" rel="noopener" class="btn btn-gold btn-lg" id="cta-cursos-wa">Consultar por WhatsApp</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-logo">
+      <a href="index.html" class="logo" aria-label="Glam Hair Design">
+        <span class="logo-script">Glam</span>
+        <span class="logo-sub">Hair Design</span>
+      </a>
+      <p class="footer-tagline">"Potenciamos tu imagen, identidad y confianza"</p>
+    </div>
+    <div class="footer-sedes">
+      <h4>Nuestras sedes</h4>
+      <ul>
+        <li>Glam Avellaneda — Gral. Lavalle 92</li>
+        <li>Glam Gerli — Lacarra 1495</li>
+        <li>Glam &amp; Coffee — Av. Mitre 5943</li>
+      </ul>
+    </div>
+    <div class="footer-social">
+      <h4>Seguinos</h4>
+      <a href="https://www.instagram.com/glam_hairdesign" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+        @glam_hairdesign
+      </a>
+      <a href="https://www.fresha.com/es/providers/glam-hair-design-t6yixtg3" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"/></svg>
+        Reservar en Fresha
+      </a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2025 Glam Hair Design. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
