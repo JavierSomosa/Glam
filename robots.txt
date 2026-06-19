@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /cursos-online.html
+
+Sitemap: https://glamhairdesign.com.ar/sitemap.xml
