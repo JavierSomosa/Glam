@@ -2,6 +2,8 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
+  <!-- Acceso bloqueado — reactivar cuando los cursos estén disponibles -->
+  <script>window.location.replace('cursos.html');</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cursos online — Glam Hair Design</title>
   <meta name="description" content="Cursos de peluquería online de Glam Hair Design. Aprendé desde donde estés, a tu ritmo, con contenido profesional de alta calidad." />
@@ -190,7 +192,7 @@
     </div>
     <div class="grid-3">
 
-      <div class="course-card reveal">
+      <div class="course-card course-card--locked reveal">
         <span class="course-level">Básico</span>
         <p class="course-title">Corte y secado profesional</p>
         <p class="course-desc">Aprendé las técnicas fundamentales de corte femenino y masculino, más técnicas de secado y brushing desde cero.</p>
@@ -199,11 +201,14 @@
           8 horas de video · Acceso de por vida
         </div>
         <p class="course-price">$15.000 <span>ARS</span></p>
-        <button class="btn btn-gold" id="comprar-basico" type="button">Comprar acceso</button>
+        <button class="btn-soon" disabled type="button">Disponible próximamente</button>
+        <div class="coming-soon-overlay" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"/></svg>
+          <span class="coming-soon-badge">Próximamente</span>
+        </div>
       </div>
 
-      <div class="course-card reveal" style="border-color: rgba(201,168,76,0.35); position:relative; overflow:hidden;">
-        <span style="position:absolute;top:1rem;right:1rem;background:var(--gold);color:#0A0A0A;font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;padding:0.3rem 0.75rem;border-radius:999px;">Popular</span>
+      <div class="course-card course-card--locked reveal">
         <span class="course-level">Intermedio</span>
         <p class="course-title">Colorimetría y mechas</p>
         <p class="course-desc">Técnicas de coloración, balayage, babylights y corrección de color. El curso más completo de nuestra plataforma.</p>
@@ -212,10 +217,14 @@
           14 horas de video · Acceso de por vida
         </div>
         <p class="course-price">$25.000 <span>ARS</span></p>
-        <button class="btn btn-gold" id="comprar-intermedio" type="button">Comprar acceso</button>
+        <button class="btn-soon" disabled type="button">Disponible próximamente</button>
+        <div class="coming-soon-overlay" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"/></svg>
+          <span class="coming-soon-badge">Próximamente</span>
+        </div>
       </div>
 
-      <div class="course-card reveal">
+      <div class="course-card course-card--locked reveal">
         <span class="course-level">Avanzado</span>
         <p class="course-title">Alisados y tratamientos</p>
         <p class="course-desc">Masterclass completa de alisados progresivos, keratinas y tratamientos de reconstrucción capilar de alta gama.</p>
@@ -224,7 +233,11 @@
           10 horas de video · Acceso de por vida
         </div>
         <p class="course-price">$20.000 <span>ARS</span></p>
-        <button class="btn btn-gold" id="comprar-avanzado" type="button">Comprar acceso</button>
+        <button class="btn-soon" disabled type="button">Disponible próximamente</button>
+        <div class="coming-soon-overlay" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"/></svg>
+          <span class="coming-soon-badge">Próximamente</span>
+        </div>
       </div>
 
     </div>
@@ -395,11 +408,11 @@
     }
   }
 
-  // Bind buy buttons
-  ['comprar-basico','comprar-intermedio','comprar-avanzado'].forEach(function(id) {
-    var btn = document.getElementById(id);
-    if (btn) btn.addEventListener('click', function() { openModal(id); });
-  });
+  // Bind buy buttons — deshabilitado hasta que los cursos estén disponibles
+  // ['comprar-basico','comprar-intermedio','comprar-avanzado'].forEach(function(id) {
+  //   var btn = document.getElementById(id);
+  //   if (btn) btn.addEventListener('click', function() { openModal(id); });
+  // });
 
   // Tab switches
   tabLogin.addEventListener('click', function() { switchTab('login'); });
